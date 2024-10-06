@@ -9,6 +9,17 @@ import App from './App'
       </div>
     )
   }
+  /* // ye mera nhi chal rha tha kyuki ye type ,props apne aap se bana liye the ,react ka rule se nhi 
+  const eactElement ={
+  type:'a',
+  props:{
+     href:"https://google.com",
+     target:'_blank'
+  },
+  children:'click me to visit google
+  }
+
+  */
 
   const anotherElement=(
     <a href="https://google.com" target ="_blank">visit google</a>
@@ -17,12 +28,12 @@ import App from './App'
 
   const anotherUser ="chai aur react"
 
-
+// ye hum react ke method se banye h
   const reactElement =React.createElement(
     'a',
     {href:'https://google.com',target:'_blank'},
     'click me to visit google',
-    anotherUser
+    anotherUser  //evaluated expression
 
   )
 
